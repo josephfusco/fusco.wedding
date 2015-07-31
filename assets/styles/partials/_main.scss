@@ -1,0 +1,230 @@
+// ==========================================================================================
+// Main
+// ==========================================================================================
+
+.navbar-default {
+	border: none;
+	border-radius: none;
+	transition: 0.3s all ease-in;
+	background-color: rgba($white, 1);
+	box-shadow: 0 0 3px rgba($shadow, 0.1);
+	@include gpu;
+
+	&.detatched {
+		background-color: rgba($white, 0.9);
+
+		.navbar-nav>li>a, .navbar-brand {
+			padding-top: 15px;
+			padding-bottom: 15px;
+		}
+
+		.navbar-toggle {
+			padding-top: 18px;
+			padding-bottom: 18px;
+		}
+
+	}
+}
+
+.navbar {
+	min-height: 0px !important;
+}
+
+.navbar-nav>li>a {
+	@include gpu;
+	transition: 0.2s all ease-in;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	text-transform: uppercase;
+
+	@media (max-width: 767px){
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+
+	.navbar-default &:hover {
+		color: $white;
+  		background-color: $green;
+	}
+}
+
+.navbar-brand {
+	@include gpu;
+	transition: 0.3s all ease-in;
+	font-size: 1.4em;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+  color: $black;
+  background-color: transparent;
+}
+
+.navbar-toggle {
+	@include gpu;
+	transition: 0.3s all ease-in;
+	border: none;
+	margin: 0 15px 0 0;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	border-radius: 0;
+	&:hover, &:focus {
+		background-color: $green !important;
+		.icon-bar {
+			background-color: $white;
+		}
+	}
+
+	.icon-bar {
+		height: 1px;
+	}
+}
+
+.navbar-toggle .icon-bar+.icon-bar {
+	margin-top: 6px;
+}
+
+.social a {
+	display: inline-block;
+	font-size: 1.4em;
+	padding: 5px;
+}
+
+.section-title {
+	text-align: center;
+	margin: 0px 0 50px;
+	display: block;
+	position: relative;
+
+	&:after {
+		position: absolute;
+		width: 100%;
+		height: 20px;
+		bottom: -30px;
+		left: 0;
+		content: '';
+		background: url($ornament-png);
+		background-image: url($ornament-svg);
+		background-position: center center;
+		background-repeat: no-repeat;
+	}
+}
+
+// temp
+section {
+	padding-top: 8em;
+	padding-bottom: 8em;
+}
+
+section#banner {
+	background: url($bg1);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center top;
+
+	@include overlay();
+
+	padding-top: 18em;
+	padding-bottom: 18em;
+
+	color: $white;
+	text-align: center;
+
+	.container {
+		position: static;
+	}
+
+	h1, h2, h3 {
+		color: $white;
+		position: relative;
+		z-index: 2;
+	}
+
+	img {
+		width: 100%;
+		height: auto;
+		max-width: 400px;
+	}
+}
+
+section#about {
+	.card {
+		width: 100%;
+		max-width: 300px;
+		padding: 20px;
+		text-align: center;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+
+		img {
+			box-shadow: 0 0 2px rgba($black, .3);
+			width: 100%;
+			max-width: 150px;
+			border-radius: 50%;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+
+	a {
+		transition: 0.3s all ease-in;
+	}
+}
+
+section#met {
+	background: url($bg10);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: left top;
+
+	@include overlay();
+
+	padding-top: 16em;
+	padding-bottom: 16em;
+
+	color: $white;
+
+	.inner {
+		margin: 0 auto;
+		display: block;
+		width: 100%;
+		max-width: 600px;
+		padding: 15px;
+		text-align: center;
+	}
+}
+
+section#registry {
+	.inner {
+		margin-top: 50px;
+		height: 100px;
+		display: table;
+		width: 100%;
+	}
+	a {
+		transition: 0.2s all ease-in;
+		display: table-cell;
+		vertical-align: middle;
+		height: 100%;
+		width: 100%;
+		&:hover, &:focus {
+			opacity: 0.4;
+		}
+	}
+	img {
+		display: block;
+		width: 100%;
+		max-width: 200px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+footer#footer {
+	padding-top: 1em;
+	padding-bottom: 1em;
+	text-align: center;
+}

@@ -1,0 +1,34 @@
+// ==========================================================================================
+// Variables
+// ==========================================================================================
+
+// fonts
+
+$font-family--primary  : 'Lato', sans-serif;
+$font-weight--light    : 300;
+$font-weight--regular  : 400;
+
+// colors
+
+$white                 : #FFF;
+$black                 : #444;
+$shadow                : #000;
+$green                 : #8EB895;
+$green--hover          : lighten($green, 10%);
+
+// background images
+
+$bg-path               : '../../images';
+
+$bg1                   : '#{$bg-path}/fw-1.jpg';
+$bg2                   : '#{$bg-path}/fw-2.jpg';
+$bg3                   : '#{$bg-path}/fw-3.jpg';
+$bg4                   : '#{$bg-path}/fw-4.jpg';
+$bg5                   : '#{$bg-path}/fw-5.jpg';
+$bg6                   : '#{$bg-path}/fw-6.jpg';
+$bg7                   : '#{$bg-path}/fw-7.jpg';
+$bg8                   : '#{$bg-path}/fw-8.jpg';
+$bg9                   : '#{$bg-path}/fw-9.jpg';
+$bg10                  : '#{$bg-path}/fw-10.jpg';
+$ornament-png          : '#{$bg-path}/ornament.png';
+$ornament-svg          : '#{$bg-path}/ornament.svg';
