@@ -13,10 +13,6 @@ module.exports = function(grunt) {
                 files: ['assets/styles/**/*.{scss,sass}'],
                 tasks: ['sass', 'autoprefixer', 'cssmin']
             },
-            js: {
-                files: '<%= jshint.all %>',
-                tasks: ['jshint', 'uglify']
-            },
             images: {
                 files: ['assets/images/**/*.{png,jpg,gif,svg}'],
                 tasks: ['imagemin']
@@ -59,17 +55,6 @@ module.exports = function(grunt) {
                 src: ['*.css', '!*.min.css'],
                 ext: '.css'
             }
-        },
-
-        jshint: {
-            options: {
-                jshintrc: '.jshintrc',
-                "force": true
-            },
-            all: [
-                'Gruntfile.js',
-                'assets/js/source/**/*.js'
-            ]
         },
 
         uglify: {
@@ -125,9 +110,6 @@ module.exports = function(grunt) {
 
     grunt.registerTask('default',
         ['sass', 'autoprefixer', 'cssmin', 'uglify', 'watch']
-    );
-    grunt.registerTask('dist',
-        ['sass', 'autoprefixer', 'cssmin', 'uglify', 'imagemin', 'watch']
     );
 
 };
