@@ -19,14 +19,14 @@
         <![endif]-->
 
     </head>
-    <body>
+    <body id="home">
 
     <div id="page">
 
         <header class="header">
 
             <nav class="navbar navbar-default navbar-fixed-top" id="nav">
-                <div class="container">
+                <div class="container-fluid">
 
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -40,12 +40,11 @@
 
                     <div id="navbar" class="navbar-collapse collapse">
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Location</a></li>
-                            <li><a href="#">Lodging</a></li>
-                            <li><a href="#">Registry</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#location">Location</a></li>
+                            <li><a href="#lodging">Lodging</a></li>
+                            <li><a href="#registry">Registry</a></li>
                         </ul>
                     </div>
 
@@ -69,30 +68,29 @@
 
                 <h2 class="section-title">About</h2>
 
-                <div class="row">
+                <div class="row content">
                     <div class="col-sm-offset-1 col-sm-5">
                         <div class="card">
-                            <img src="http://placehold.it/400x400" alt="">
+                            <img src="assets/images/avatar-megan.jpg" alt="megan">
 
                             <h3>Megan</h3>
 
-                            <p>Fusce vel dui. Etiam vitae tortor. Cras risus ipsum, faucibus ut, ullamcorper id, varius ac, leo. Aenean viverra rhoncus pede.</p>
+                       <!--      <p>Fusce vel dui. Etiam vitae tortor. Cras risus ipsum, faucibus ut, ullamcorper id, varius ac, leo. Aenean viverra rhoncus pede.</p> -->
 
                             <div class="social">
                                 <a href="https://facebook.com/megan.conlon.90" target="_blank"><i class="fa fa-facebook"></i></a>
                                 <a href="https://www.pinterest.com/megaritaaa/" target="_blank"><i class="fa fa-pinterest"></i></a>
                                 <a href="https://instagram.com/megaritaaaa/" target="_blank"><i class="fa fa-instagram"></i></a>
-
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-5">
                         <div class="card">
-                            <img src="http://placehold.it/400x400" alt="">
+                            <img src="assets/images/avatar-joe.jpg" alt="joe">
 
                             <h3>Joe</h3>
 
-                            <p>Fusce vel dui. Etiam vitae tortor. Cras risus ipsum, faucibus ut, ullamcorper id, varius ac, leo. Aenean viverra rhoncus pede.</p>
+                           <!--  <p>Fusce vel dui. Etiam vitae tortor. Cras risus ipsum, faucibus ut, ullamcorper id, varius ac, leo. Aenean viverra rhoncus pede.</p> -->
 
                             <div class="social">
                                 <a href="https://www.facebook.com/JoeFusco3" target="_blank"><i class="fa fa-facebook"></i></a>
@@ -102,36 +100,53 @@
 
                         </div>
                     </div>
-                </div>
-                <div class="row">
                     <div class="col-sm-offset-4 col-sm-4">
                         <div class="card">
-                            <img src="http://placehold.it/400x400" alt="">
+                            <img src="assets/images/avatar-delaney.jpg" alt="delaney">
 
                             <h3>Delaney</h3>
 
-                            <p>Fusce vel dui. Etiam vitae tortor. Cras risus ipsum, faucibus ut, ullamcorper id, varius ac, leo. Aenean viverra rhoncus pede.</p>
+                            <p>Dancing, Binky, Elmo.</p>
                         </div>
                     </div>
                 </div>
+
             </div>
         </section>
 
         <section id="met">
             <div class="container">
                 <div class="inner">
-                    <p>Megan used to visit Joe for weeks where he worked at what used to be the Stoneyard Bar &amp; Grill. After many awkward conversations and nights out, they took it to the next level and started dating. Since Brockport, they have had their beautiful daughter Delaney Fusco. After many awkward conversations and nights out, they took it to the next level and started dating. Since Brockport, they have had their beautiful daughter Delaney Fusco.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
             </div>
         </section>
 
         <section id="location">
-
+            <div id="map"></div>
+            <button type="button" onclick="goToMap()">Take me there!</button>
         </section>
 
         <section id="lodging">
             <div class="container">
                 <h2 class="section-title">Lodging</h2>
+                <div class="row content">
+                    <div class="col-sm-6">
+
+                        <p>A block of rooms have been reserved for May 27, 2016 - May 29, 2016. The special room rate will be available until May 6th or until the group block is sold-out, whichever comes first.</p>
+
+                    </div>
+                    <div class="col-sm-6">
+
+                        <p>Complimentary shuttle service for hotel guests will be provided to and from Westminster Hall &amp; Chapel on Saturday, May 28, 2016 if a minimum number of rooms are reserved prior to the cut-off date.</p>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <a target="_blank" href="http://hamptoninn.hilton.com/en/hp/groups/personalized/R/ROCFPHX-CFW-20160527/index.jhtml?WT.mc_id=POG" class="btn btn-primary">Book A Room</a>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -140,22 +155,19 @@
 
                 <h2 class="section-title">Registry</h2>
 
-                <div class="row">
-                    <div class="col-sm-4 col-sm-offset-2">
+                <div class="row content">
+                    <div class="col-sm-12">
                         <div class="inner">
                             <a href="#" target="_blank">
-                                <img src="assets/images/amazon.svg" alt="amazon">
+                                <img src="assets/images/bbab.svg" alt="bed bath and beyond">
                             </a>
                         </div>
                     </div>
-                    <div class="col-sm-4">
-                        <div class="inner">
-                            <a href="#" target="_blank">
-                                <img src="assets/images/bbab.svg" alt="bed bath and beyond"
-                            </a>
-                        </a>
-                    </div>
                 </div>
+                <div class="text-center">
+                    <a target="_blank" href="http://www.bedbathandbeyond.com/store/giftregistry/view_registry_guest.jsp?registryId=542297304&eventType=Wedding&pwsurl=?mcid=EM_triggeredem_emailregistryplural__allpromos" class="btn btn-primary">Go To Registry</a>
+                </div>
+
             </div>
         </section>
 
@@ -170,6 +182,40 @@
 
     <script type="text/javascript" src="assets/js/plugins.min.js"></script>
     <script type="text/javascript" src="assets/js/main.min.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 
+        <script type="text/javascript">
+            // When the window has finished loading create our google map below
+            google.maps.event.addDomListener(window, 'load', init);
+
+            function init() {
+
+                var mapOptions = {
+                    zoom: 11,
+                    scrollwheel: false,
+                    center: new google.maps.LatLng(43.0200361, -77.5370185),
+                    styles: [{featureType:"road",elementType:"geometry",stylers:[{lightness:100},{visibility:"simplified"}]},{"featureType":"water","elementType":"geometry","stylers":[{"visibility":"on"},{"color":"#C6E2FF",}]},{"featureType":"poi","elementType":"geometry.fill","stylers":[{"color":"#C5E3BF"}]},{"featureType":"road","elementType":"geometry.fill","stylers":[{"color":"#D1D1B8"}]}]
+                };
+
+                var mapElement = document.getElementById('map');
+                var map = new google.maps.Map(mapElement, mapOptions);
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(43.0200361, -77.5370185),
+                    map: map,
+                    title: 'Snazzy!'
+                });
+
+            }
+
+            function goToMap(){
+                // If it's an iPhone, open up map app
+                if( (navigator.platform.indexOf("iPhone") != -1)
+                    || (navigator.platform.indexOf("iPod") != -1)
+                    || (navigator.platform.indexOf("iPad") != -1))
+                     window.open("maps://maps.google.com/maps?daddr=lat,long&amp;ll=");
+                else
+                     window.open("http://maps.google.com/maps?daddr=lat,long&amp;ll=");
+            }
+        </script>
     </body>
 </html>
