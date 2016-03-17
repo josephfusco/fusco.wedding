@@ -241,6 +241,12 @@ footer#footer {
 	}
 }
 
+@media (max-width: 767px) {
+	body {
+		text-align: center;
+	}
+}
+
 .content {
 	padding-top: 60px;
 	padding-bottom: 60px;
